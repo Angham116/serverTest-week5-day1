@@ -1,0 +1,25 @@
+{
+  "name": "servertestworkshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "router.js",
+  "scripts": {
+    "test": "tape test.js | tap-spec",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angham116/serverTest-week5-day1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Angham116/serverTest-week5-day1/issues"
+  },
+  "homepage": "https://github.com/Angham116/serverTest-week5-day1#readme",
+  "devDependencies": {
+    "supertest": "^3.4.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.2"
+  }
+}
