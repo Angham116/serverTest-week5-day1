@@ -1,6 +1,8 @@
 const {
 	handleHomePage,
-	handleNotFound 
+	handleNotFound,
+	handleBlogPageWithGET,
+	handleBlogPageWithPost
 	}  = require('./handeler')
 
 const router = (req, res) => {
@@ -11,6 +13,13 @@ const router = (req, res) => {
 	if (url === '/') {
 		handleHomePage(req, res);
 	} 
+	/* Handle blog page */
+	else if (url === '/blog' && method === 'GET'){
+		handleBlogPageWithGET(req, res)
+	}
+	else if (url === '/blog' && method === 'POST'){
+		handleBlogPageWithPost(req, res)
+	}
 	/* Handle Not Found Page */
 	else {
 		handleNotFound (req, res);
@@ -18,3 +27,4 @@ const router = (req, res) => {
 }
 
 module.exports = router;
+
